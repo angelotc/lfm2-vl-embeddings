@@ -1,14 +1,18 @@
-# Real Estate Similarity System
+# Nippon Homes Real Estate Similarity System
 
 > **Note**: This code represents a subset of a larger proprietary codebase. The components shown here focus specifically on the similarity search functionality and embedding generation service.
 
-This document explains the multimodal similarity system for finding similar real estate listings using vector embeddings and machine learning.
+This document explains the multimodal similarity system for finding similar real estate listings using vector embeddings and machine learning, as implemented on [nipponhomes.com](https://nipponhomes.com).
 
 ## Overview
 
 The system consists of two main components:
 1. **Embedding Generation Service** - Creates multimodal embeddings from property images and metadata
 2. **Similar Listings API** - Finds similar properties using vector similarity search with hybrid filtering
+
+### Implementation Preview
+
+![System Architecture](similar-listings.png)
 
 ## Components
 
@@ -36,14 +40,14 @@ A Next.js API endpoint that finds similar properties using a hybrid search appro
 - **Similarity Ranking**: Results are ranked by vector similarity scores (highest similarity first)
 
 **Search Constraints:**
-- Location: ±20km radius (±0.2 degrees lat/lng)
+- Location: ±35km radius (±0.35 degrees lat/lng)
 - Price: 50% to 200% of the target property's price
 - Only active listings
 - Results ordered by semantic similarity score
 
 ## System Architecture
 
-![System Architecture](similar-listings.png)
+### Technical Flow Diagram
 
 ```mermaid
 graph TD
