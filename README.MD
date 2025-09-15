@@ -2,7 +2,7 @@
 
 > **Note**: This code represents a subset of a larger proprietary codebase. The components shown here focus specifically on the similarity search functionality and embedding generation service.
 
-This document explains the multimodal similarity system for finding similar real estate listings using vector embeddings and machine learning, developed for future implementation on [nipponhomes.com](https://nipponhomes.com).
+This document explains the multimodal similarity system for finding similar real estate listings using vector embeddings and machine learning, on [nipponhomes.com](https://nipponhomes.com).
 
 ## Overview
 
@@ -183,7 +183,7 @@ GET /api/listings/similar/[listingId]
 ## Environment Requirements
 
 - **Python**: 3.8+
-- **GPU**: CUDA-compatible for optimal LFM2-VL performance
+- **GPU**: CUDA-compatible for optimal LFM2-VL performance (RTX 4060M used for testing)
 - **Database**: PostgreSQL with pgvector extension
 - **Storage**: AWS S3 with CloudFront CDN
 - **Dependencies**: PyTorch, Transformers, Supabase, vecs
