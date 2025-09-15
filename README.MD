@@ -25,7 +25,7 @@ This service generates sophisticated multimodal embeddings for real estate listi
 - **Storage**: Stores the resulting 128-dimensional fused vectors in a PostgreSQL vector database using the `vecs` extension
 
 **Key Features:**
-- Processes Hokkaido region listings specifically
+- Processes Hokkaido region listings specifically (due to time/computing constraint of the weekend)
 - Handles up to 10 images per property
 - Uses an MLP fusion layer to combine visual and structured data
 - Batch processing with intelligent error handling
